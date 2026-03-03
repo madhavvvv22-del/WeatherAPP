@@ -3,8 +3,8 @@ const searchbtn= document.getElementById('searchbtn');
 const weather_img= document.querySelector('.weather-image');
 const temp= document.querySelector('.temp');
 const description= document.querySelector('.description');
-const humid= document.getElementById('.humid');
-const windspeed= document.getElementById('.Windspeed');
+const humid= document.getElementById('humid');
+const windspeed= document.getElementById('Windspeed');
 const locerror=document.querySelector('.location-error');
 
 const webody=document.querySelector('.weather-body');
@@ -47,7 +47,7 @@ async function checkWeather(city){
             
     }
 
-    console.log(weather_data);
+  
 }
 
 searchbtn.addEventListener('click', ()=> {

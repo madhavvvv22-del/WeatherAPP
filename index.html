@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css"><!--This is for the style sheet-->
+</head>
+<body>
+    <div class="container"><!--For the whole container-->
+        <div class="header"><!--Header of the wether app-->
+            <div class="searchbox"><!--Searchbox of my app-->
+                <input type="text" placeholder="ENTER YOUR LOCATION" class="input-box"><!--input box of the app-->
+                <button class="fa-solid fa-magnifying-glass-location" id="searchbtn"></button><!--button of the app-->
+            </div>
+        </div>
+
+       <div class="location-error">
+        <h1>Sorry location not found</h1>
+        <img src="ssets/404.png" alt="error 404">
+       </div> 
+
+
+        <div class="weather-body">
+            <img src="/WeatherAPP/ssets/cloud.png" alt="Weather image" class="weather-image">
+            <div class="weather-box">
+                <p class="temp">0<sup>0</sup>C</p>
+                <p class="description">light rain and cloudy</p>
+
+                <div class="details">
+                    <div class="humid">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humid">45%</span>
+                        <p>HUMIDITY</p>    
+                    </div>
+                </div>
+                <div class="Windspeed">
+                   <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="Windspeed">12km/hr</span>
+                        <p>Windspeed</p>
+                    </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/139eddcac4.js" crossorigin="anonymous"></script>
+</body>
+</html>
